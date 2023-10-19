@@ -48,7 +48,9 @@ export default function Private({ children }) {
     }
 
     if (!signed) {
-        return <Navigate to="/listaDeTarefas" />
+        return (
+            <Navigate to="/" />
+        )
     }
 
     return children;
